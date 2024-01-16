@@ -34,7 +34,7 @@ with open('style.css') as f:
 title_col, emp_col, btc_col, eth_col, xmr_col, sol_col, xrp_col = st.columns([1.3,0.2,1,1,1,1,1])
 
 with title_col:
-    st.markdown('<p class="dashboard_title">Monitorización<br>De Riesgos Climáticos</p>', unsafe_allow_html = True)
+    st.markdown('<p class="dashboard_title">Monitorización de<br>Riesgos Climáticos</p>', unsafe_allow_html = True)
 
 with btc_col:
     with st.container(border=True):
