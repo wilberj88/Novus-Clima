@@ -14,17 +14,6 @@ st.set_page_config(
     page_title = 'Novus Clima'
 )
 
-st.markdown(
-    """
-    <style>
-        footer {display: none}
-        [data-testid="stHeader"] {display: none}
-    </style>
-    """, unsafe_allow_html = True
-)
-
-with open('style.css') as f:
-    st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html = True)
 
 
 
