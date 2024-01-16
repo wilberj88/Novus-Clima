@@ -15,7 +15,8 @@ st.set_page_config(
 )
 
 
-
+with open('style.css') as f:
+    st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html = True)
 
 
 st.markdown('<p class="dashboard_title">Novus<br>Clima</p>', unsafe_allow_html = True)
