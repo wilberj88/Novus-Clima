@@ -9,6 +9,7 @@ import time
 from datetime import time
 import plotly.graph_objects as go
 from vega_datasets import data
+import altair as alt
     
 st.set_page_config(
     layout = 'wide',
