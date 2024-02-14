@@ -33,14 +33,14 @@ st.markdown('<p class="dashboard_title">⛅ Novus Clima<br>Saving ♡ & 🏛️ 
 c1, c2, c3 =  st.columns(3)
 with c1:
     with st.container(border=True):
-        st.markdown(f'<p class="btc_text">Monitoring<br>TODAY</p>', unsafe_allow_html = True)
+        st.markdown(f'<p class="btc_text">Monitoring TODAY</p>', unsafe_allow_html = True)
     
 
 with c2:
     with st.container(border=True):
-        st.markdown(f'<p class="btc_text">Alarming<br>RIGH NOW</p>', unsafe_allow_html = True)
+        st.markdown(f'<p class="btc_text">Alarming RIGH NOW</p>', unsafe_allow_html = True)
 
 with c3:
     with st.container(border=True):
-        st.markdown(f'<p class="btc_text">Preventing<br>TOMORROW</p>', unsafe_allow_html = True)
+        st.markdown(f'<p class="btc_text">Preventing TOMORROW</p>', unsafe_allow_html = True)
     
