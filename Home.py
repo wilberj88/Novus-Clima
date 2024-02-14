@@ -36,7 +36,10 @@ with c1:
     
 
 with c2:
-    st.header('Alarming')
+    with st.container(border=True):
+        st.markdown(f'<p class="btc_text">Alarming<br></p>', unsafe_allow_html = True)
 
 with c3:
-    st.header('Preventing')
+    with st.container(border=True):
+        st.markdown(f'<p class="btc_text">Preventing<br></p>', unsafe_allow_html = True)
+    
