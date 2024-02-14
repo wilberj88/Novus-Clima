@@ -11,3 +11,4 @@ streamlit_vertical_slider
 streamlit_toggle
 langchain
 openai
+vega_datasets
