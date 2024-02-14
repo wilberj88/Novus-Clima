@@ -31,7 +31,9 @@ st.markdown('<p class="dashboard_title">⛅ Novus Clima<br>Saving Life & Assets<
 
 c1, c2, c3 =  st.columns(3)
 with c1:
-    st.header('Monitoring')
+    with st.container(border=True):
+        st.markdown(f'<p class="btc_text">Monitoring<br></p>', unsafe_allow_html = True)
+    
 
 with c2:
     st.header('Alarming')
