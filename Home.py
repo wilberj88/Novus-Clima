@@ -27,7 +27,7 @@ with open('style.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html = True)
 
 
-st.markdown('<p class="dashboard_title">⛅ Novus Clima<br>Saving Life & Assets<br>in Real Time</p>', unsafe_allow_html = True)
+st.markdown('<p class="dashboard_title">⛅ Novus Clima<br>Saving Life & Assets<br>in Real Time</p><p class="btc_text">Monitoring<br></p>', unsafe_allow_html = True)
 
 c1, c2, c3 =  st.columns(3)
 with c1:
