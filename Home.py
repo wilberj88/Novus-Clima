@@ -27,4 +27,14 @@ with open('style.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html = True)
 
 
-st.markdown('<p class="dashboard_title">⛅ Novus Clima<br>Real Time Solutions</p>', unsafe_allow_html = True)
+st.markdown('<p class="dashboard_title">⛅ Novus Clima<br>Saving Life & Assets in Real Time</p>', unsafe_allow_html = True)
+
+c1, c2, c3 =  st.columns(3)
+with c1:
+    st.header('Monitoring')
+
+with c2:
+    st.header('Alarming')
+
+with c1:
+    st.header('Preventing')
