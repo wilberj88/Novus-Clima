@@ -273,12 +273,12 @@ with st.container(border=True):
     
 
 
-with c2:
+
 with st.container(border=True):
     st.markdown(f'<p class="btc_text">Alarming RIGH NOW</p>', unsafe_allow_html = True)
     st.subheader('Risk Dissasters Predictions')
 
-with c3:
+
 with st.container(border=True):
     st.markdown(f'<p class="btc_text">Preventing TOMORROW</p>', unsafe_allow_html = True)
     st.subheader('Best Practices')
