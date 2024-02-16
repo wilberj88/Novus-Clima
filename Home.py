@@ -277,7 +277,7 @@ with st.expander("The Solution"):
     with st.container(border=True):
         st.markdown(f'<p class="btc_text">Monitoring TODAY</p>', unsafe_allow_html = True)
         current_time = time.ctime()
-        st.subheader("Automated Report by LLM (Open AI - Crew AI) 🤖")
+        st.subheader("Automated Monitor Report by LLM (Open AI - Crew AI) 🤖")
         st.write("""
         
         - Today's temperature in Seattle is forecasted to be warmer than yesterday, with a high of 52°F and a low of 43°F. 
@@ -337,10 +337,32 @@ with st.expander("The Solution"):
     
     with st.container(border=True):
         st.markdown(f'<p class="btc_text">Alarming RIGH NOW</p>', unsafe_allow_html = True)
-        st.subheader('Risk Dissasters Predictions')
+
+        st.subheader("Automated ALARMING Report by LLM (Open AI - Crew AI) 🤖")
+    
+        st.write("""
+        The top 3 weather challenges for today in Seattle are:
+        
+        1. Rain showers: The risks associated with this include flooding. To mitigate these risks, residents should prepare an emergency kit, secure their homes, avoid floodwaters, and stay informed about the weather conditions.
+        
+        2. Gusty winds: These could lead to power outages. To mitigate these risks, residents should secure outdoor items, prepare for power outages, stay away from power lines, and stay indoors when the winds are extremely high. 
+        
+        3. Small craft and beach advisories: The risks associated with this include strong currents and rip tides. To mitigate these risks, residents should heed advisories, know swimming risks, be aware of rip currents, and keep an eye on the weather.
+        """)
     
     
     with st.container(border=True):
         st.markdown(f'<p class="btc_text">Preventing TOMORROW</p>', unsafe_allow_html = True)
-        st.subheader('Best Practices')
+        st.subheader("Automated PREVENTING Report by LLM (Open AI - Crew AI) 🤖")
+        st.write("""
+        Based on the analysis of the climate challenges in Seattle, the top 3 recommendations to prevent the biggest impact of future natural disasters are:
+        
+        1. Rain Showers: Improve and expand the city's stormwater management systems to handle frequent and heavy rain showers. This includes construction of additional storm drains, reservoirs or retention ponds, and implementing green infrastructure solutions like rain gardens and permeable pavements. Maintenance of drainage systems and public education about the importance of not dumping waste into drains could also be beneficial.
+        
+        2. Gusty Winds: Regularly inspect and maintain infrastructure such as power lines, bridges, and buildings to ensure they can withstand strong winds. Implement building codes that require new construction to be designed to withstand gusty winds. Encourage residents to secure loose outdoor items that could be blown away or cause damage during wind storms.
+        
+        3. Small Craft and Beach Advisories: Improve dissemination of advisories to ensure all watercraft operators and beachgoers are aware of the risks. This could include the use of mobile apps, social media, or text message alerts. Provide education on water safety and the dangers of rip currents. Consider implementing restrictions or closures during particularly dangerous conditions.
+        
+        """)
+
     
