@@ -277,7 +277,16 @@ with st.expander("The Solution"):
     with st.container(border=True):
         st.markdown(f'<p class="btc_text">Monitoring TODAY</p>', unsafe_allow_html = True)
         current_time = time.ctime()
-        st.write("By Open Weather API At: ", current_time)
+        st.write("""
+        REPORT BY LLM(Open AI - Crew AI)
+        - Today's temperature in Seattle is forecasted to be warmer than yesterday, with a high of 52°F and a low of 43°F. 
+        - There are chances of rain showers throughout the day. 
+        - After a brief period of spring-like weather, winter conditions have returned with some lowland snow in parts of western Washington.
+        - There are advisories for small crafts and beach hazards.
+        - The weather forecast predicts the snow to turn into rain, followed by sunshine.
+        """
+        )
+        st.write("Real time data By Open Weather API At: ", current_time)
         sity = "Seattle"
         URL1 = BASE_URL + "q=" + sity + "&appid=" + API_KEY
         
