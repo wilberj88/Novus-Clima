@@ -38,7 +38,7 @@ with open('style.css') as f:
 
 st.markdown('<p class="dashboard_title">⛅ Novus Clima<br>Saving ♡ & 🏛️ <br>in Real Time</p>', unsafe_allow_html = True)
 
-st.header("The Challenge: Detoxify Cities")
+st.header("The Challenge: Detoxify Cities 💪")
 st.subheader("Diagnosis context: How is the Air We Breathe?")
 st.markdown("*Visualizing Global Air Pollution Levels*")
 
