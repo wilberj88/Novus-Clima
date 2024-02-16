@@ -50,7 +50,7 @@ with st.expander("The Challenge"):
 
 # =========================
 # Load the data
-df = pd.read_csv('air-pollution.csv', encoding='latin-1', index_col=0)
+    df = pd.read_csv('air-pollution.csv', encoding='latin-1', index_col=0)
 
 
 # ============== PLOTS ==============
