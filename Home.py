@@ -36,9 +36,9 @@ st.markdown(
 with open('style.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html = True)
 
-st.sidebar.header("Data Sources")
+st.sidebar.header("Info")
 st.sidebar.info(
-    """Made with ❤️ by Wilber Jiménez Hernández
+    """Made with ❤️ by Wilber Jiménez Hernández //
     The raw data is taken from [Kaggle](https://www.kaggle.com/datasets/hasibalmuzdadid/global-air-pollution-dataset) and 
     originally scraped from [here](https://www.elichens.com/)!"""
     )
