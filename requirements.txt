@@ -12,3 +12,5 @@ streamlit_toggle
 langchain
 openai
 vega_datasets
+matplotlib
+seaborn==0.13.1
