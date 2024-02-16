@@ -6,7 +6,7 @@ from lightweight_charts.widgets import StreamlitChart
 import random
 import pandas as pd
 import time
-from datetime import time
+import datetime
 import plotly.graph_objects as go
 from vega_datasets import data
 import altair as alt
@@ -275,7 +275,22 @@ with st.expander("The Solution"):
     
     with st.container(border=True):
         st.markdown(f'<p class="btc_text">Monitoring TODAY</p>', unsafe_allow_html = True)
-        
+        current_time = time.ctime()
+        st.write("At: ", current_time)
+        st.header("Risks in Seattle rigth now")
+        col1, col2, col3, col4 = st.columns(4)
+        col1.metric("Wildfire", "57%", "14%")
+        col2.metric("Flooding", "25%", "-18%")
+        col3.metric("Drought", "89%", "13%")
+        col4.metric("Hurricanes", "45%", "18%")
+        st.header("OPPORTUNITIES in Seattle rigth now")
+        col5, col6, col7, col8 = st.columns(4)
+        col5.metric("FIRE EXTINGUISHERS", "97%", "14%")
+        col6.metric("WATER WUMPS", "45%", "-18%")
+        col7.metric("KAYAKS", "85%", "13%")
+        col8.metric("SHELTERS", "35%", "18%")
+
+    
     
     
     
