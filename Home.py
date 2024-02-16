@@ -216,8 +216,7 @@ with st.expander("The Challenge"):
 
 
 with st.expander("The Solution"):
-    st.header("Lead Cities to build their own Novus Clima 🏆")
-    st.subheader("Seattle's Example")
+    st.header("Lead Cities to build their own Novus Clima 🏆 - Seattle`s case")
     
     with st.container(border=True):
         st.markdown(f'<p class="btc_text">Historic PATTERNS</p>', unsafe_allow_html = True)
