@@ -35,6 +35,11 @@ st.markdown(
 with open('style.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html = True)
 
+st.sidebar.header("Data Sources")
+st.sidebar.info(
+    """The raw data is taken from [Kaggle](https://www.kaggle.com/datasets/hasibalmuzdadid/global-air-pollution-dataset) and 
+    originally scraped from [here](https://www.elichens.com/)!"""
+    )
 
 st.markdown('<p class="dashboard_title">⛅ Novus Clima<br>Saving ♡ & 🏛️ <br>in Real Time</p>', unsafe_allow_html = True)
 
