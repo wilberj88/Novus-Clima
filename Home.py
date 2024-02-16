@@ -50,7 +50,7 @@ df = pd.read_csv('air-pollution.csv', encoding='latin-1', index_col=0)
 
 # ============== PLOTS ==============
 
-    with st.expander("About Air Pollution"):
+    st.subheader("About Air Pollution"):
         st.write("""Air Pollution is contamination of the indoor or outdoor environment by any chemical,
                  physical, or biological agent that modifies the natural characteristics of the atmosphere.""")
 
