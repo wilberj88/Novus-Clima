@@ -16,7 +16,8 @@ import seaborn as sns
 import plotly.express as px
 import plotly.io as pio
 pio.templates.default = "plotly_dark"
-
+BASE_URL = "https://api.openweathermap.org/data/2.5/weather?"
+API_KEY = "146090ad17fa8843bc9eca97c53926b4"
     
 st.set_page_config(
     layout = 'wide',
@@ -276,7 +277,36 @@ with st.expander("The Solution"):
     with st.container(border=True):
         st.markdown(f'<p class="btc_text">Monitoring TODAY</p>', unsafe_allow_html = True)
         current_time = time.ctime()
-        st.write("At: ", current_time)
+        st.write("By Open Weather API At: ", current_time)
+        sity = "Seattle"
+        URL1 = BASE_URL + "q=" + sity + "&appid=" + API_KEY
+        
+        # HTTP request
+        if sity:
+           response = requests.get(URL1)
+        
+        # checking the status code of the request
+        if response.status_code == 200:
+           # getting data in the json format
+           data = response.json()
+           # getting the main dict block
+           main = data['main']
+          # getting temperature
+           temperature = main['temp']
+           # getting the humidity
+           humidity = main['humidity']
+           # getting the pressure
+           pressure = main['pressure']
+           # weather report
+           report = data['weather']
+          
+        st.write(main)
+        st.write(temperature)
+        st.write(humidity)
+        st.write(pressure)
+        st.write(report)
+
+        
         st.header("Risks in Seattle rigth now")
         col1, col2, col3, col4 = st.columns(4)
         col1.metric("Wildfire", "57%", "14%")
