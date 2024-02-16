@@ -38,7 +38,8 @@ with open('style.css') as f:
 
 st.sidebar.header("Data Sources")
 st.sidebar.info(
-    """The raw data is taken from [Kaggle](https://www.kaggle.com/datasets/hasibalmuzdadid/global-air-pollution-dataset) and 
+    """Made with ❤️ by Wilber Jiménez Hernández
+    The raw data is taken from [Kaggle](https://www.kaggle.com/datasets/hasibalmuzdadid/global-air-pollution-dataset) and 
     originally scraped from [here](https://www.elichens.com/)!"""
     )
 
